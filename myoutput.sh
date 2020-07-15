@@ -1,5 +1,3 @@
-name='Phong khon1'
+name='My test'
 echo $name
-ls -l
-pwd
-ps
+ps aux
