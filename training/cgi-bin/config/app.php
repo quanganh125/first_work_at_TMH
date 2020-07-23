@@ -331,7 +331,7 @@ return [
             'port' => '3306',
             'username' => 'root',
             'password' => '',
-            'database' => 'training',
+            'database' => 'simple_chat_system',
 
             /**
              * You can use a DSN string to set the entire configuration
