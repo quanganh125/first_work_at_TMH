@@ -4297,3 +4297,84 @@ Request URL: /user/login
 Client IP: 172.17.0.1
 
 
+2020-07-23 04:46:07 Error: [ParseError] syntax error, unexpected '}', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /var/html/cgi-bin/src/Controller/UserController.php on line 12
+Stack Trace:
+- /var/html/cgi-bin/vendor/composer/ClassLoader.php:322
+- spl_autoload_call - [internal], line ??- class_exists - [internal], line ??- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Core/App.php:161
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Core/App.php:67
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:146
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:44
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/BaseApplication.php:249
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/cgi-bin/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/cgi-bin/webroot/index.php:40
+
+Request URL: /user/login/
+Client IP: 172.17.0.1
+
+
+2020-07-23 04:46:08 Error: [ParseError] syntax error, unexpected '}', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /var/html/cgi-bin/src/Controller/UserController.php on line 12
+Stack Trace:
+- /var/html/cgi-bin/vendor/composer/ClassLoader.php:322
+- spl_autoload_call - [internal], line ??- class_exists - [internal], line ??- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Core/App.php:161
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Core/App.php:67
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:146
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:44
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/BaseApplication.php:249
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/cgi-bin/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/cgi-bin/webroot/index.php:40
+
+Request URL: /user/login
+Client IP: 172.17.0.1
+
+
+2020-07-23 04:46:20 Error: [ParseError] syntax error, unexpected '}', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /var/html/cgi-bin/src/Controller/UserController.php on line 12
+Stack Trace:
+- /var/html/cgi-bin/vendor/composer/ClassLoader.php:322
+- spl_autoload_call - [internal], line ??- class_exists - [internal], line ??- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Core/App.php:161
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Core/App.php:67
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:146
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:44
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/BaseApplication.php:249
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/cgi-bin/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/cgi-bin/webroot/index.php:40
+
+Request URL: /user/login/
+Client IP: 172.17.0.1
+
+
