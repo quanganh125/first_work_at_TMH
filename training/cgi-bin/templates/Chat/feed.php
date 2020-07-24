@@ -1,3 +1,6 @@
+<?php
+    $data = $this->get
+?>
 <h1>Feed</h1>
 <br>
 <form method="post" action=""> 
