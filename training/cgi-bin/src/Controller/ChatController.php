@@ -22,8 +22,10 @@ class ChatController extends AppController
                 $new_message->message = $this->request->getData('message');
                 $new_message->create_at = Date("Y/m/d H:i:s");
                 $new_message->update_at = $new_message->create_at;
-                if($this->request->getData('photo'))
-                    $new_message->image_file_name = '/img/upload/' . $this->request->getData('photo');
+                if(strpos($this->request->getData('media'),'.jpg'))
+                    $new_message->image_file_name = '/img/upload/' . $this->request->getData('media');
+                if(strpos($this->request->getData('media'),'.mp4'))
+                    $new_message->image_file_name = '/video/upload/' . $this->request->getData('media');    
              if($this->tFeeds->save($new_message)){
                 $this->Flash->success(__('Your message has been saved'));
                 return $this->redirect(['action' => 'feed']);

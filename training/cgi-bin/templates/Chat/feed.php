@@ -15,7 +15,7 @@
         <input type="submit" value="POST" style="margin-left: 5px;">
         <input type="submit" formaction="edit" value="Edit" style="margin-left: 5px;">   
 
-        <input type='file' id="BtnBrowseHidden" name="photo" hidden>
+        <input type='file' id="BtnBrowseHidden" name="media" hidden>
         <label for="BtnBrowseHidden" id="LblBrowse" style="margin-left: 5px;">                                 
             Media
         </label>
@@ -47,14 +47,13 @@
                 if($message->message != NULL)
                     echo $message->message;
                 if($message->image_file_name != NULL && strpos($message->image_file_name,'.mp4')){?>
-                    <!-- echo $this->Html->media($message->image_file_name, array('text' => 'Fallback text','width'=>'300px'));   -->
                     <video width="320" height="240" controls>
                         <source src="<?= $message->image_file_name?>" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                  <?php } 
                 if($message->image_file_name != NULL && strpos($message->image_file_name,'.jpg'))
-                    echo $this->Html->image($message->image_file_name, array('alt' => 'CakePHP','width'=>'300px'));
+                    echo $this->Html->image($message->image_file_name, array('alt' => 'CakePHP','width'=>'320px'));
             ?></td>
             <td><?= $message->update_at->format("d/m/yy h:i:s")?>
             <td><input type="submit" formaction="delete/<?=$message->id?>" value="delete" style="margin-left: 5px;"></td>

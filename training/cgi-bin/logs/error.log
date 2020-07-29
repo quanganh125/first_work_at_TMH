@@ -16035,3 +16035,33 @@ Referer URL: http://localhost:8080/chat/feed
 Client IP: 172.17.0.1
 
 
+2020-07-29 16:19:41 Error: [Cake\Http\Exception\MissingControllerException] Controller class Img could not be found. in /var/html/cgi-bin/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 158
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:46
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/BaseApplication.php:249
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:77
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/cgi-bin/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/cgi-bin/webroot/index.php:40
+
+Request URL: /img/upload/Video_My_Love.mp4
+Referer URL: http://localhost:8080/chat/feed
+Client IP: 172.17.0.1
+
+
