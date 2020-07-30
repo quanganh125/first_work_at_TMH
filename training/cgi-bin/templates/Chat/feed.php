@@ -40,7 +40,7 @@
             <td><?php
                 foreach($users as $user){
                     if($user->id == $message->user_id)
-                        echo $user->name;
+                        echo $user->name.':';
                 }
             ?>
             <td><?php 
@@ -55,15 +55,17 @@
                 if($message->image_file_name != NULL && strpos($message->image_file_name,'.jpg'))
                     echo $this->Html->image($message->image_file_name, array('alt' => 'CakePHP','width'=>'320px'));
             ?></td>
-            <td><?= $message->update_at->format("d/m/yy h:i:s")?>
-            <td><input type="submit" formaction="delete/<?=$message->id?>" value="delete" style="margin-left: 5px;"></td>
-            <td><button type="button" onclick="edit('<?=$message->message?>', '<?=$message->id?>')">Edit</button></td>          
+            <td><?php echo $message->update_at->format("d/m/yy h:i:s"); ?>
+            <td><input type="submit" formaction="delete/<?=$message->id?>" value="delete" style="margin-left: 5px;">
+            <?php if($message->message != NULL){ ?>
+            <button type="button" style="margin-left: 5px;" onclick="edit('<?=$message->message?>', '<?=$message->id?>')">Edit</button>         
             <script>
                 function edit(mes, id){
                     document.getElementById("edit").innerHTML = mes;
                     document.getElementById("edit_id").innerHTML = id;
                 }
-            </script> 
+            </script> </td>
+            <?php } ?>
         </tr>
         </form>
     <?php endforeach; ?>

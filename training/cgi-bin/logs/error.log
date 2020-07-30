@@ -16065,3 +16065,33 @@ Referer URL: http://localhost:8080/chat/feed
 Client IP: 172.17.0.1
 
 
+2020-07-30 22:01:57 Error: [InvalidArgumentException] Expression is missing operator (IS, IS NOT) with `null` value. in /var/html/cgi-bin/vendor/cakephp/cakephp/src/Database/Expression/QueryExpression.php on line 784
+Stack Trace:
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Database/Expression/QueryExpression.php:713
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Database/Expression/QueryExpression.php:133
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Database/Query.php:2261
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Database/Query.php:1005
+- /var/html/cgi-bin/src/Controller/ChatController.php:12
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Controller/Controller.php:521
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:79
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/BaseApplication.php:251
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:159
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:166
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:121
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/cgi-bin/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /var/html/cgi-bin/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /var/html/cgi-bin/webroot/index.php:40
+
+Request URL: /chat/feed
+Referer URL: http://localhost:8080/user/login
+Client IP: 172.17.0.1
+
+

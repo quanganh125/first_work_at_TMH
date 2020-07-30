@@ -19,19 +19,21 @@ class ChatController extends AppController
             $new_message = $this->tFeeds->newEmptyEntity();
             if ($this->request->is('post')){
                 $new_message->user_id = $session->read('User.id');
-                $new_message->message = $this->request->getData('message');
+                if(!empty($this->request->getData('message')))
+                    $new_message->message = $this->request->getData('message');
                 $new_message->create_at = Date("Y/m/d H:i:s");
                 $new_message->update_at = $new_message->create_at;
                 if(strpos($this->request->getData('media'),'.jpg'))
                     $new_message->image_file_name = '/img/upload/' . $this->request->getData('media');
                 if(strpos($this->request->getData('media'),'.mp4'))
-                    $new_message->image_file_name = '/video/upload/' . $this->request->getData('media');    
+                    $new_message->image_file_name = '/video/upload/' . $this->request->getData('media'); 
+            if($new_message->image_file_name!=NULL &&  $new_message->message!= NULL){
              if($this->tFeeds->save($new_message)){
                 $this->Flash->success(__('Your message has been saved'));
                 return $this->redirect(['action' => 'feed']);
-            }
-             $this->Flash->error(__('Unable to save your message.'));
-            }
+            } else $this->Flash->error(__('Unable to save your message.'));
+            } else $this->Flash->error(__('Empty message.'));
+        }
             $messages = $this->Paginator->paginate($this->tFeeds->find()->order(['update_at' => 'DESC']));
             $users = $this->Paginator->paginate($this->tUsers->find());
             $this->set(compact('messages','users'));
